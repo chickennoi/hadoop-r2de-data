@@ -3,6 +3,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql import Row
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
+import pandas as pd
 
 spark = SparkSession.builder.appName("customers_spark_job").enableHiveSupport().getOrCreate()
 
